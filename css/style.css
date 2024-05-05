@@ -335,6 +335,7 @@ a{
     border-color:var(--main-color) !important ;
     cursor: pointer;
 }
+/* ================================================ */
 
 .slider-img{
     width: 150px;
