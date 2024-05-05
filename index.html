@@ -14,64 +14,66 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navId">
+<body data-bs-spy="scroll" data-bs-target="#main-nav">
 
 
 
 
-    <nav id="navId" class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ">
-        <div class="container">
-            <a class="navbar-brand" href="#">Kerri</a>
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                aria-label="Toggle navigation">
+    <section class="main-nav fixed-top ">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container">
+              <a class="navbar-brand" href="#">Kerri</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#Home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#About">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Portfolio">Portfolio</a>
-                    </li>                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Contact">Contact</a>
-                    </li>                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Blog">Blog</a>
-                    </li>
-                    <li class="nav-item dropdown main d-flex flex-column align-items-start ">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" 
-                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Action 1</a>
-                            <a class="dropdown-item" href="#">Action 2</a>
-                            <a class="dropdown-item p-1" href="#">
-                                <div class="btn-group second">
-                                    <a class="dropdown-toggle " type="button"  data-bs-auto-close="false" aria-expanded="false">
-                                      Manual close
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                      <li><a class="dropdown-item" href="#">Menu item</a></li>
-                                      <li><a class="dropdown-item" href="#">Menu item</a></li>
-                                      <li><a class="dropdown-item" href="#">Menu item</a></li>
-                                    </ul>
-                                  </div>
-                            </a>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#About">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                  <li class="nav-item dropdown main-drop">
+                    <a class="nav-link" role="button"  aria-expanded="false">
+                      More 
+                    </a>
+                    <ul class="dropdown-menu main-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <div class="btn-group deep-drop">
+                            <button class="dropdown-item dropdown-toggle "  data-bs-auto-close="false" aria-expanded="false">
+                              Deep drop down
+                            </button>
+                            <ul class="dropdown-menu deep-menu">
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            </ul>
+                          </div>
+                      </a></li>
+                    </ul>
+                  </li>
 
-
-                        </div>
-                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                  </li>
+                 
                 </ul>
-               
-            </div>
-        </div>
-    </nav>
 
+              </div>
+            </div>
+          </nav>
+    </section>
 
 
     <div id="Home" class="home py-3">
@@ -277,6 +279,42 @@
     </section>
 
 
+
+    <section id="testimonials" class=" p-3 my-3">
+        <div class="container p-2">
+            <div class="test-head w-50 mx-auto text-center ">
+                <h2>Our <span class="fw-bold ">Testimonials</span></h2>
+                <p>It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
+            </div>
+            <div class="slider">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="fs-4 main-color mx-auto w-50 text-center my-3"><i class="fa-solid fa-comments"></i></div>
+                        <img src="images/testi-1.jpg" class="d-block mx-auto border p-1 slider-img rounded-circle  " alt="...">
+                        <p class="w-50 my-3 text-center mx-auto ">" The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here."</p>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="fs-4 main-color mx-auto w-50 text-center my-3"><i class="fa-solid fa-comments"></i></div>
+
+                        <img src="images/testi-2.jpg" class="d-block mx-auto border p-1 slider-img rounded-circle  " alt="...">
+                        <p class="w-50 my-3 text-center mx-auto ">" The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here."</p>
+
+                      </div>
+
+                      
+                    </div>
+                    <div class="carousel-indicators my-3 position-static ">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      </div>
+                   
+                  </div>
+            </div>
+
+        </div>
+    </section>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
